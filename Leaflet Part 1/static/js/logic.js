@@ -45,7 +45,7 @@ d3.json(url).then(function(data){
             fillColor: fillColor(coordinates[2]),
             fillOpacity: 0.75,
             radius: earthquake.properties.mag*25000
-          }).bindPopup(`<h3>${earthquake.properties.place}</h3><hr><p>${new Date(earthquake.properties.time)}</p>`).addTo(myMap);
+          }).bindPopup(`<h3>${earthquake.properties.place}</h3>`).addTo(myMap);
     } 
     // Followed example from leaflet website: https://leafletjs.com/examples/choropleth/
     let legend = L.control({ position: "bottomright" });
